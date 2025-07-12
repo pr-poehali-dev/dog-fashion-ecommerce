@@ -61,31 +61,29 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
-              <h1 className="text-2xl font-bold text-gray-900">
-                Fashion Store
-              </h1>
+              <h1 className="text-2xl font-bold text-gray-900">EcoFashion</h1>
               <nav className="hidden md:flex space-x-6">
                 <a
                   href="#catalog"
-                  className="text-gray-600 hover:text-[#E11D48] transition-colors"
+                  className="text-gray-600 hover:text-green-600 transition-colors"
                 >
                   Каталог
                 </a>
                 <a
                   href="#blog"
-                  className="text-gray-600 hover:text-[#E11D48] transition-colors"
+                  className="text-gray-600 hover:text-green-600 transition-colors"
                 >
                   Блог
                 </a>
                 <a
                   href="#about"
-                  className="text-gray-600 hover:text-[#E11D48] transition-colors"
+                  className="text-gray-600 hover:text-green-600 transition-colors"
                 >
                   О компании
                 </a>
                 <a
                   href="#contacts"
-                  className="text-gray-600 hover:text-[#E11D48] transition-colors"
+                  className="text-gray-600 hover:text-green-600 transition-colors"
                 >
                   Контакты
                 </a>
@@ -105,7 +103,7 @@ const Index = () => {
               </Button>
               <Button variant="ghost" size="sm">
                 <Icon name="ShoppingCart" size={20} />
-                <Badge className="ml-1 bg-[#E11D48] text-white">3</Badge>
+                <Badge className="ml-1 bg-green-600 text-white">3</Badge>
               </Button>
               <Button variant="ghost" size="sm">
                 <Icon name="User" size={20} />
@@ -116,27 +114,27 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-gray-50 to-gray-100 py-20">
+      <section className="bg-gradient-to-r from-green-50 to-emerald-100 py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Модная одежда <br />
-            <span className="text-[#E11D48]">нового поколения</span>
+            Экологичная мода <br />
+            <span className="text-green-600">для осознанных людей</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Откройте для себя коллекцию стильной одежды, созданной для
-            современных людей
+            Откройте для себя экологичную коллекцию, созданную с заботой о
+            планете и стиле
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-[#E11D48] hover:bg-[#BE185D] text-white px-8"
+              className="bg-green-600 hover:bg-green-700 text-white px-8"
             >
               Смотреть каталог
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-[#E11D48] text-[#E11D48] hover:bg-[#E11D48] hover:text-white"
+              className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
             >
               О компании
             </Button>
@@ -168,7 +166,7 @@ const Index = () => {
                     alt={product.name}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <Badge className="absolute top-4 left-4 bg-[#E11D48] text-white">
+                  <Badge className="absolute top-4 left-4 bg-green-600 text-white">
                     {product.category}
                   </Badge>
                   <Button
@@ -183,11 +181,11 @@ const Index = () => {
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">
                     {product.name}
                   </h4>
-                  <p className="text-2xl font-bold text-[#E11D48] mb-4">
+                  <p className="text-2xl font-bold text-green-600 mb-4">
                     {product.price}
                   </p>
                   <div className="flex gap-2">
-                    <Button className="flex-1 bg-[#E11D48] hover:bg-[#BE185D] text-white">
+                    <Button className="flex-1 bg-green-600 hover:bg-green-700 text-white">
                       <Icon name="ShoppingCart" size={16} className="mr-2" />В
                       корзину
                     </Button>
@@ -204,7 +202,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-[#E11D48] text-[#E11D48] hover:bg-[#E11D48] hover:text-white"
+              className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
             >
               Показать больше товаров
             </Button>
@@ -213,7 +211,7 @@ const Index = () => {
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="py-20 bg-gray-50">
+      <section id="blog" className="py-20 bg-green-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">
@@ -248,7 +246,7 @@ const Index = () => {
                       {post.comments} комментариев
                     </span>
                   </div>
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#E11D48] transition-colors">
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
                     {post.title}
                   </h4>
                   <p className="text-gray-600 mb-4 line-clamp-2">
@@ -256,7 +254,7 @@ const Index = () => {
                   </p>
                   <Button
                     variant="ghost"
-                    className="text-[#E11D48] hover:bg-[#E11D48] hover:text-white p-0"
+                    className="text-green-600 hover:bg-green-600 hover:text-white p-0"
                   >
                     Читать далее
                     <Icon name="ArrowRight" size={16} className="ml-2" />
@@ -270,7 +268,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-[#E11D48] text-[#E11D48] hover:bg-[#E11D48] hover:text-white"
+              className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
             >
               Все статьи блога
             </Button>
@@ -281,7 +279,7 @@ const Index = () => {
       {/* RoboKassa Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-[#E11D48] to-[#BE185D] rounded-2xl p-12 text-center text-white">
+          <div className="bg-gradient-to-r from-[green-600] to-[green-700] rounded-2xl p-12 text-center text-white">
             <h3 className="text-4xl font-bold mb-4">Безопасные платежи</h3>
             <p className="text-xl mb-8 opacity-90">
               Мы принимаем все виды платежей через RoboKassa
@@ -303,7 +301,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="secondary"
-              className="bg-white text-[#E11D48] hover:bg-gray-100"
+              className="bg-white text-green-600 hover:bg-gray-100"
             >
               Узнать больше о платежах
             </Button>
@@ -316,9 +314,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-xl font-bold mb-4">Fashion Store</h4>
+              <h4 className="text-xl font-bold mb-4">EcoFashion Store</h4>
               <p className="text-gray-400 mb-4">
-                Современная мода для стильных людей
+                Экологичная мода для осознанных людей
               </p>
               <div className="flex space-x-4">
                 <Button
@@ -421,7 +419,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Fashion Store. Все права защищены.</p>
+            <p>&copy; 2025 EcoFashion. Все права защищены.</p>
           </div>
         </div>
       </footer>
